@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Work+Sans&display=swap');
+
+body {
+    background: linear-gradient(135deg, rgba(44, 150, 243, 0.7), rgba(33, 113, 204, 0.7));
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#header_image_container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+#header_quote_1,
+#header_quote_2 {
+    position: absolute;
+    font-size: 1.5rem;
+    text-shadow: -1px 0px 3px rgba(0, 0, 0, 0.7), 0px 1px 3px rgba(0, 0, 0, 0.7), 1px 0px 3px rgba(0, 0, 0, 0.7), 0px -1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#header_quote_1 {
+    top: 10px;
+    left: 20px;
+}
+
+#header_quote_2 {
+    bottom: 10px;
+    right: 20px;
+}
+
+#portrait_image_container {
+    width: 280px;
+    height: auto;
+    margin: 30px auto;
+}
+
+#portrait_image {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#profile_section {
+    text-align: center;
+}
+
+#profile_name {
+    margin-top: 20px;
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+}
+
+.White_Line {
+    width: 100%;
+    margin-top: -4px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.Collapsible_Button {
+    display: flex;
+    width: 100%;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.Collapsible_Button:hover,
+.Active {
+    background-color: rgb(33, 113, 204);
+}
+
+.Collapsible_Block {
+    padding: 0 18px;
+    background-color: white;
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.Label {
+    align-self: flex-start;
+    width: 50%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.Symbol {
+    align-self: flex-end;
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.Emphasize {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 5px;
+    text-align: center;
+    text-size-adjust: 0.8;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+.Mobile_Only_Content {
+    display: none;
+}
+
+@media only screen and (max-width: 870px) {
+    .Desktop_Only_Content {
+        display: none;
+    }
+
+    .Mobile_Only_Content {
+        display: block;
+    }
+
+    #profile_name {
+        font-size: 2.2rem;
+    }
+
+    .Collapsible_Button {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .White_Line {
+        height: 2px;
+    }
+}
